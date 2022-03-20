@@ -1,0 +1,5 @@
+数据结构 计算机组成原理 操作系统 计算机网络：自顶向下方法
+c++ primer STL源码剖析 Effective C++  More Effective C++ 深度探索C++对象模型
+鸟哥的Linux私房菜基础学习篇 LinuxShell脚本攻略 UNIX环境高级编程
+TCP/IP网络编程 Linux高性能服务端编程
+MySQL必知必会 高性能MySQL redis

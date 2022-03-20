@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        int i=0;
+        int j=height.size()-1;
+        int Volume=0;
+        int MaxVolume=0;
+        while(i!=j){
+            Volume=min(height[i],height[j])*(j-i);
+            MaxVolume=Volume>MaxVolume?Volume:MaxVolume;
+            if(height[i]>=height[j]) j--;
+            else i++;
+        }
+        return MaxVolume;
+    }
+};

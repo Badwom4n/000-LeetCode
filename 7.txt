@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int reverse(int x) {
+        int i=10;
+        int bit=0;
+        int num;
+        int output=0;
+        while(x!=0){
+            num=x%i;
+            if(bit==9){
+                if(output>214748364||output<-214748364) return 0;
+                //if(output==214748364&&num>7) return 0;
+                //if(output==-21478364&&num<-8) return 0;
+            }
+            output=output*10+num;
+            bit+=1;
+            x=x/10;
+        }
+        return output;
+    }
+};
