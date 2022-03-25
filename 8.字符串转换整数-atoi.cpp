@@ -1,5 +1,19 @@
-```c++
-class automation{
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem8.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
+/*
+ * @lc app=leetcode.cn id=8 lang=cpp
+ *
+ * [8] 字符串转换整数 (atoi)
+ */
+
+// @lc code=start
+class Automation{
 public:
     string state="start";
     unordered_map<string,vector<string>> table={
@@ -29,12 +43,14 @@ public:
 
 class Solution {
 public:
-    automation automation;
     int myAtoi(string s) {
+        Automation automation;
         for(char c:s){
             automation.get(c);
         }
         return automation.sign*automation.ans;
     }
+    
 };
-```
+// @lc code=end
+

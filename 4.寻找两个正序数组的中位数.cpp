@@ -1,8 +1,14 @@
-```c++
+/*
+ * @lc app=leetcode.cn id=4 lang=cpp
+ *
+ * [4] 寻找两个正序数组的中位数
+ */
+
+// @lc code=start
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-        int m,n,k,Left1,Left2,cut1,cut2;
+       int m,n,k,Left1,Left2,cut1,cut2;
         int L1Max,L1Min;
         int L2Max,L2Min;
         m=nums1.size();
@@ -30,4 +36,5 @@ public:
         return (m+n)%2==0? (max(L1Max,L2Max)+min(L1Min,L2Min))/2.0:max(L1Max,L2Max);
     }
 };
-```
+// @lc code=end
+

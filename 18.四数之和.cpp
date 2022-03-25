@@ -1,7 +1,14 @@
-```c++
+/*
+ * @lc app=leetcode.cn id=18 lang=cpp
+ *
+ * [18] 四数之和
+ */
+
+// @lc code=start
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
+
         int a,b,c,d;
         int ptr1,ptr2;
         vector<vector<int>> output;
@@ -48,4 +55,5 @@ public:
         return output;
     }
 };
-```
+// @lc code=end
+

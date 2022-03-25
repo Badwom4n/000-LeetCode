@@ -1,4 +1,18 @@
-```c++
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem7.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
+/*
+ * @lc app=leetcode.cn id=7 lang=cpp
+ *
+ * [7] 整数反转
+ */
+
+// @lc code=start
 class Solution {
 public:
     int reverse(int x) {
@@ -20,4 +34,5 @@ public:
         return output;
     }
 };
-```
+// @lc code=end
+

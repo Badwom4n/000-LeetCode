@@ -1,4 +1,18 @@
-```c++
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem15.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
+/*
+ * @lc app=leetcode.cn id=15 lang=cpp
+ *
+ * [15] 三数之和
+ */
+
+// @lc code=start
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -47,6 +61,8 @@ public:
         }
         return output;
 
+
     }
 };
-```
+// @lc code=end
+

@@ -1,7 +1,22 @@
-```c++
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem16.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
+/*
+ * @lc app=leetcode.cn id=16 lang=cpp
+ *
+ * [16] 最接近的三数之和
+ */
+
+// @lc code=start
 class Solution {
 public:
     int threeSumClosest(vector<int>& nums, int target) {
+        
         if(nums.size()==3) return nums[0]+nums[1]+nums[2];
         sort(nums.begin(),nums.end());
         int best=10000;
@@ -30,6 +45,8 @@ public:
             }
         }
         return output;
+
     }
 };
-```
+// @lc code=end
+

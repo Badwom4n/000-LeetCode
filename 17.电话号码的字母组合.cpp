@@ -1,4 +1,18 @@
-```c++
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem17.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
+/*
+ * @lc app=leetcode.cn id=17 lang=cpp
+ *
+ * [17] 电话号码的字母组合
+ */
+
+// @lc code=start
 class Solution {
 public:
 
@@ -25,4 +39,5 @@ public:
         
     }
 };
-```
+// @lc code=end
+

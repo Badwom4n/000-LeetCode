@@ -1,7 +1,20 @@
-```c++
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem13.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
+/*
+ * @lc app=leetcode.cn id=13 lang=cpp
+ *
+ * [13] 罗马数字转整数
+ */
+
+// @lc code=start
 class Solution {
 public:
-    
     int romanToInt(string s) {
 
         int output=0;
@@ -27,4 +40,5 @@ public:
         return output;
     }
 };
-```
+// @lc code=end
+

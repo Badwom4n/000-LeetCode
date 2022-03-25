@@ -1,4 +1,18 @@
-```c++
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem14.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
+/*
+ * @lc app=leetcode.cn id=14 lang=cpp
+ *
+ * [14] 最长公共前缀
+ */
+
+// @lc code=start
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
@@ -21,6 +35,8 @@ public:
         }
 
         return output;
+
     }
 };
-```
+// @lc code=end
+

@@ -1,4 +1,18 @@
-```c++
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem19.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
+/*
+ * @lc app=leetcode.cn id=19 lang=cpp
+ *
+ * [19] 删除链表的倒数第 N 个结点
+ */
+
+// @lc code=start
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -12,6 +26,7 @@
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
+
         ListNode* dummynode=new ListNode();
         ListNode* leftnode=new ListNode();
         ListNode* rightnode=new ListNode();
@@ -31,5 +46,7 @@ public:
         delete delnode;
         return dummynode->next;
     }
+    
 };
-```
+// @lc code=end
+
