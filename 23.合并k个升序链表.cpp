@@ -25,7 +25,25 @@ using namespace std;
  */
 class Solution {
 public:
+    ListNode* MergeTwoLists(ListNode* list1, ListNode* list2){
+        return nullptr;
+    }
     ListNode* mergeKLists(vector<ListNode*>& lists) {
+        int k=lists.size();
+        if(k==0){
+            return nullptr;
+        }
+        else if(k==1){
+            return lists[0];
+        }
+        else if(k==2){
+            return MergeTwoLists(lists[0],lists[1]);
+        }
+        else{
+            vector<ListNode*> lists1={lists.begin(), lists.begin()+k/2+1};
+            vector<ListNode*> lists2={lists.begin()+k/2+1, lists.end()};
+            return MergeTwoLists(mergeKLists(lists1),mergeKLists(lists2));
+        }
 
 
     }
