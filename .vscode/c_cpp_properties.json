@@ -1,22 +1,18 @@
 {
     "configurations": [
         {
-            "name": "Win32 Mac",
+            "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**",
-                "C:\\Users\\lian\\AppData\\Roaming\\Code\\User\\globalStorage\\wangtao0101.debug-leetcode",
-                "/Users/lian/Library/Application Support/Code/User/globalStorage/wangtao0101.debug-leetcode"
+                "${workspaceFolder}/**"
             ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
             ],
-            "windowsSdkVersion": "10.0.19041.0",
-            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe",
+            "compilerPath": "/usr/bin/clang",
             "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "cppStandard": "c++98",
+            "intelliSenseMode": "macos-clang-arm64"
         }
     ],
     "version": 4
