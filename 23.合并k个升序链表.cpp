@@ -26,7 +26,28 @@ using namespace std;
 class Solution {
 public:
     ListNode* MergeTwoLists(ListNode* list1, ListNode* list2){
-        return nullptr;
+        ListNode* pre;
+        ListNode* list3=new ListNode(-1);
+        pre=list3;
+        while(list1!=nullptr && list2!=nullptr){
+            if(list1->val>=list2->val){
+                list3->next=list2;
+                list2=list2->next;
+                list3=list3->next;
+            }
+            else{
+                list3->next=list1;
+                list1=list1->next;
+                list3=list3->next;
+            }
+        }
+        if(list1==nullptr){
+            list3->next=list2;
+        }
+        else if(list2==nullptr){
+            list3->next=list1;
+        }
+        return pre->next;
     }
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         int k=lists.size();
