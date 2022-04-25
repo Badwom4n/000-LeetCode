@@ -1,6 +1,7 @@
 // @before-stub-for-debug-begin
 #include <vector>
 #include <string>
+#include <map>
 #include "commoncppproblem1.h"
 
 using namespace std;
